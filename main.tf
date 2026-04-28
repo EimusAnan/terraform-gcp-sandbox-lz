@@ -16,7 +16,7 @@ terraform {
   cloud {
     organization = "pixemeck-org"
     workspaces {
-      name = "landing-zone"
+      name = "terraform-gcp-sandbox-lz"
     }
   }
 
