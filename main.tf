@@ -8,17 +8,17 @@ terraform {
     }
   }
 
-  backend "gcs" {
-    bucket = "poc-project-terraform-state-bucket"
-    prefix = "terraform/state"
-  }
-
-  # cloud {
-  #   organization = "pixemeck-org"
-  #   workspaces {
-  #     name = "landing-zone"
-  #   }
+  # backend "gcs" {
+  #   bucket = "poc-project-terraform-state-bucket"
+  #   prefix = "terraform/state"
   # }
+
+  cloud {
+    organization = "pixemeck-org"
+    workspaces {
+      name = "landing-zone"
+    }
+  }
 
 }
 
