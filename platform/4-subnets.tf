@@ -6,13 +6,13 @@
 #   private_ip_google_access = true
 #   stack_type               = "IPV4_ONLY"
 # }
-removed {
-  from = google_compute_subnetwork.public
+# removed {
+#   from = google_compute_subnetwork.public
 
-  lifecycle {
-    destroy = true
-  }
-}
+#   lifecycle {
+#     destroy = true
+#   }
+# }
 
 # resource "google_compute_subnetwork" "private" {
 #   name                     = "private"
@@ -32,10 +32,10 @@ removed {
 #     ip_cidr_range = "172.20.0.0/18"
 #   }
 # }
-removed {
-  from = google_compute_subnetwork.private
+# removed {
+#   from = google_compute_subnetwork.private
 
-  lifecycle {
-    destroy = true
-  }
-}
+#   lifecycle {
+#     destroy = true
+#   }
+# }

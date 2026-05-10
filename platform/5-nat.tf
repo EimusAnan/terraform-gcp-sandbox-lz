@@ -5,12 +5,12 @@
 
 #   depends_on = [google_project_service.api]
 # }
-removed {
-  from = google_compute_address.nat
-  lifecycle {
-    destroy = true
-  }
-}
+# removed {
+#   from = google_compute_address.nat
+#   lifecycle {
+#     destroy = true
+#   }
+# }
 
 # resource "google_compute_router" "router" {
 #   name    = "router"
@@ -18,13 +18,13 @@ removed {
 #   network = google_compute_network.vpc.id
 # }
 
-removed {
-  from = google_compute_router.router
+# removed {
+#   from = google_compute_router.router
 
-  lifecycle {
-    destroy = true
-  }
-}
+#   lifecycle {
+#     destroy = true
+#   }
+# }
 
 # resource "google_compute_router_nat" "nat" {
 #   name   = "nat"
@@ -41,10 +41,10 @@ removed {
 #   }
 # }
 
-removed {
-  from = google_compute_router_nat.nat
+# removed {
+#   from = google_compute_router_nat.nat
 
-  lifecycle {
-    destroy = true
-  }
-}
+#   lifecycle {
+#     destroy = true
+#   }
+# }
